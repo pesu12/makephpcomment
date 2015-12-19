@@ -46,15 +46,12 @@ public function phpcomment($text)
 
 Add following to the ANAX-MVC/webroot/hello_view.php after $app->views->add('welcome/hello_world');
 $app->router->add('', function() use ($app) {
-
-    $content = $app->textFilter->doFilter('Function: Test php comment\n\n@param
-     string $text xxxx\n\n@return string text xxxx','shortcode, phpcomment');
-
+	$content = $app->textFilter->doFilter('Function: Test php comment\n\n@param
+    string $text xxxx\n\n@return string text xxxx','shortcode, phpcomment');
     $app->views->add('welcome/page', [
         'content' => $content,
     ]);
-});
-$app->router->handle();
+});$app->router->handle();
  
 To the view file Anax-MVC\app\view\welcome add a file page.tpl.php with content:
 <article class="article1">
