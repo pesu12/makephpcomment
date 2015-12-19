@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1450518712">
-  <project timestamp="1450518712">
+<coverage generated="1450532998">
+  <project timestamp="1450532998">
     <file name="C:\Users\per.sundberg\BTH\DV1486\kmom06\makephpcomment/autoloader.php">
       <line num="19" type="stmt" count="1"/>
       <line num="21" type="stmt" count="1"/>
