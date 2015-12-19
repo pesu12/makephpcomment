@@ -21,9 +21,10 @@ Requirement
 
 This library package requires PHP 5.3 or later.
 
-Usage
------
+Installation and Usage
+----------------------
 Install the ANAX-MVC from github on address:
+
 git clone https://github.com/mosbth/Anax-MVC.git
 
 Install the module php-makecomment to folder ANAX-MVC\3pp.
@@ -45,6 +46,7 @@ public function phpcomment($text)
 
 
 Add following to the ANAX-MVC/webroot/hello_view.php after $app->views->add('welcome/hello_world');
+
 $app->router->add('', function() use ($app) {
 	$content = $app->textFilter->doFilter('Function: Test php comment\n\n@param
     string $text xxxx\n\n@return string text xxxx','shortcode, phpcomment');
