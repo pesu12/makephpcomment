@@ -1,0 +1,23 @@
+{
+    "name": "pesu/makephpcomment",    
+    "type": "library",
+    "description": "Webtemplate to create websites",
+    "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Per Sundberg",
+            "email": sundberg_p@yahoo.com",
+            "homepage": "http://dbwebb.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+		"pesu/php-makecomment": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "pesu\\": "src/" }
+    }
+}
