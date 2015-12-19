@@ -36,6 +36,7 @@ Therefore the Anax-MVC\app\config\autoloader.php needs to be updated with:
 
 The file Anax-MVC\src\Content\CTextFilter.php needs to add after row 'shortcode' => 'shortCode',
 with
+
 `'phpcomment' => 'phpcomment',`  
 
 The file Anax-MVC\src\Content\CTextFilter.php  needs to have function added.   
