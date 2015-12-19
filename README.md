@@ -57,13 +57,20 @@ $app->router->add('', function() use ($app) {
  
 To the view file Anax-MVC\app\view\welcome add a file page.tpl.php with content:
 <article class="article1">
+
 <?=$content?>
- <?php if(isset($byline)) : ?>
+
+<?php if(isset($byline)) : ?>
+
 <footer class="byline">
+
 <?=$byline?>
+
 </footer>
+
 <?php endif; ?>
- </article>
+
+</article>
  
 Bugs
 ----
