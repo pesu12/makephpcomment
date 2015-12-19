@@ -37,13 +37,7 @@ with
 'phpcomment' => 'phpcomment',  
 
 The file Anax-MVC\src\Content\CTextFilter.php  needs to have function added.   
-/**
-* Format text according to comment.
-*
-* @param string $text the text that should be formatted.
-*
-* @return string as the formatted html-text.
-*/
+
 public function phpcomment($text)
 {
    return \pesu\MakePhpComment::makephpcomment($text);
@@ -78,52 +72,10 @@ Bugs
 To file bug reports please send email to:
 <sundberg_p@yahoo.com>
 
-Development and Testing
+Development
 -----------------------
 This module has been developed at Blekinge Tekniska Högskola at Karlskrona Sweden
 and is a part of course DV14886 PHP MVC.
-
-I tested the function with different strings in the hello_view.php 
-Test 1 with empty string 
-$content = $app->textFilter->doFilter('','shortcode, phpcomment');
-Result:
-/**
- * 
- */
-
-Test 2 with one line string (no \n) 
-$content = $app->textFilter->doFilter('Function: Test php comment','shortcode, phpcomment');
-Result:
-/**
- * Function: Test php comment 
- */
-
-Test 3 with two line string (one \n)
-$content = $app->textFilter->doFilter('Function: Test php comment\n','shortcode, phpcomment');
-Result:
-/**
- * Function: Test php comment 
- */
-
-Test 4 with three line string (two \n)
-$content = $app->textFilter->doFilter('Function: Test php comment\n\n','shortcode, phpcomment');
-Result:
-/**
- * Function: Test php comment 
- * 
- */
-
-Test 5 with five line strings (four \n)  
-$content = $app->textFilter->doFilter('Function: Test php comment\n\n@param
-string $text xxxx\n\n@return string text xxxx','shortcode, phpcomment');
-
-/**
- * Function: Test php comment 
- * 
- * @param string $text xxxx 
- * 
- * @return string text xxxx 
- */
 
 Version History
 ---------------
