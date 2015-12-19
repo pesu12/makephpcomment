@@ -1,16 +1,15 @@
-https://scrutinizer-ci.com/g/pesu12/makephpcomment/badges/quality-score.png?b=master
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pesu12/makephpcomment/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pesu12/makephpcomment/?branch=master)
 
 [![Code Coverage](https://scrutinizer-ci.com/g/pesu12/makephpcomment/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/pesu12/makephpcomment/?branch=master)
 
-!https://scrutinizer-ci.com/g/pesu12/makephpcomment/badges/build.png?b=master!:https://scrutinizer-ci.com/g/pesu12/makephpcomment/build-status/master
+[![Build Status](https://scrutinizer-ci.com/g/pesu12/makephpcomment/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pesu12/makephpcomment/build-status/master)
+
 
 PHP MakePhpComment Module
 ==========================
 
-PHP MakePhpComment Nov 2015
+PHP MakePhpComment Nov 2015 by Per Sundberg 
 
-by Per Sundberg 
--
 
 Introduction
 ------------
@@ -129,9 +128,11 @@ string $text xxxx\n\n@return string text xxxx','shortcode, phpcomment');
 Version History
 ---------------
 PHP MakePhpComment Module 1.0.0 (22 Nov 2015), First Version
+
 PHP MakePhpComment Module 1.0.1 (10 Dec 2015), Badges Added for Scrutinizer,coverage and build
 
 Copyright and License
 ---------------------
 PHP MakePhpComment Module
+
 Copyright (c) 2015 Per Sundberg  
