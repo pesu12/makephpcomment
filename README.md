@@ -31,39 +31,46 @@ Install the module php-makecomment to folder ANAX-MVC\3pp.
 
 The php-makecomment is meant to be used with class autoloading. 
 Therefore the Anax-MVC\app\config\autoloader.php needs to be updated with:
-->addNameSpace('pesu', ANAX_INSTALL_PATH . '3pp/php-makecomment/pesu')
+
+`->addNameSpace('pesu', ANAX_INSTALL_PATH . '3pp/php-makecomment/pesu')`
 
 The file Anax-MVC\src\Content\CTextFilter.php needs to add after row 'shortcode' => 'shortCode',
 with
-'phpcomment' => 'phpcomment',  
+`'phpcomment' => 'phpcomment',`  
 
 The file Anax-MVC\src\Content\CTextFilter.php  needs to have function added.   
 
-public function phpcomment($text)
+`public function phpcomment($text)
 {
    return \pesu\MakePhpComment::makephpcomment($text);
-}
+}`
 
 
 Add following to the ANAX-MVC/webroot/hello_view.php after $app->views->add('welcome/hello_world');
 
-$app->router->add('', function() use ($app) {
+`$app->router->add('', function() use ($app) {
 	$content = $app->textFilter->doFilter('Function: Test php comment\n\n@param
     string $text xxxx\n\n@return string text xxxx','shortcode, phpcomment');
     $app->views->add('welcome/page', [
         'content' => $content,
     ]);
-});$app->router->handle();
+});$app->router->handle();`
  
 To the view file Anax-MVC\app\view\welcome add a file page.tpl.php with content:
 <article class="article1">
 
 `<?=$content?>
+
 <?php if(isset($byline)) : ?>
+
 <footer class="byline">
+
 <?=$byline?>
+
 </footer>
+
 <?php endif; ?>
+
 </article>`
  
 Bugs
